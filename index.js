@@ -40,7 +40,7 @@ app.use('/v1', router);
 //   res.sendFile(path.join(__dirname, './client/index.html'));
 // })
 
-var PORT = process.env.PORT || 8000;
+var PORT = process.env.PORT || 3000;
 var HOST = process.env.HOST || '127.0.0.1';
 
 app.listen(PORT, HOST);
