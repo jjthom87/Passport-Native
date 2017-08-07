@@ -12,6 +12,7 @@ exports.create = function(req, res, next){
 }
 
 exports.index = function(req, res, next){
+	console.log(req.user.todos)
 	res.json({todos: req.user.todos})
 }
 
