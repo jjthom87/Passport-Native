@@ -16,10 +16,7 @@ if (process.env.NODE_ENV == 'production'){
 app.use(morgan('combined'));
 
 app.use(bodyParser.json({limit: '50mb'}));
-app.use(bodyParser.urlencoded({ 
-	limit: '50mb',
-	extended: true, 
-	parameterLimit:50000}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json());
 app.use('/v1', router);
