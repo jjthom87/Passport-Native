@@ -10,7 +10,7 @@ var router = require('./services/router');
 if (process.env.NODE_ENV == 'production'){
 	mongoose.connect(process.env.MONGO_URL)
 } else {
-	mongoose.connect('mongodb://jjthom87:Ntho1mas@ds157740.mlab.com:57740/auth-intro')
+	mongoose.connect('mongodb://jjthom87:password@ds157740.mlab.com:57740/auth-intro')
 }
 
 app.use(morgan('combined'));
